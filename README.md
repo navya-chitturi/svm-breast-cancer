@@ -1,1 +1,70 @@
-# svm-breast-cancer
+# SVM Classification on Breast Cancer Dataset
+
+This project applies Support Vector Machine (SVM) classification on a breast cancer dataset. It demonstrates model training, evaluation, visualization, and hyperparameter tuning.
+
+---
+
+## Objectives
+
+- Load and preprocess a breast cancer dataset
+- Train SVM models using **linear** and **RBF** kernels
+- Visualize the decision boundaries using **2D feature space**
+- Perform **hyperparameter tuning** using `GridSearchCV`
+- Evaluate model performance using **accuracy** and **classification report**
+
+---
+
+## Dataset
+
+- The dataset used contains features extracted from breast cancer cell images.
+- Binary classification:  
+  - **M** (Malignant) → `1`  
+  - **B** (Benign) → `0`
+
+---
+
+## Model Training
+
+- Two SVM models were trained:
+  - Linear kernel
+  - RBF (Radial Basis Function) kernel
+- Feature scaling applied using `StandardScaler`
+
+---
+
+## Visualization
+
+Two separate decision boundary plots were generated:
+- One for the **Linear SVM**
+- One for the **RBF SVM**
+
+These visualizations use the **first two features** from the dataset for 2D plotting.
+
+---
+
+## Hyperparameter Tuning
+
+- Used `GridSearchCV` with cross-validation (`cv=5`)
+- Parameters tuned:
+  - `C`: [0.1, 1, 10]
+  - `gamma`: [0.01, 0.1, 1]
+
+---
+
+## Evaluation
+
+- Accuracy score on test set
+- Classification report including:
+  - Precision
+  - Recall
+  - F1-score
+
+---
+
+## Notes
+
+- PCA was **not used** in this project.
+- Decision boundary plots are based on **real features**, not dimensionality reduction.
+
+---
+
