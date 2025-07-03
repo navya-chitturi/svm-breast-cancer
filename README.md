@@ -14,6 +14,21 @@ This project applies Support Vector Machine (SVM) classification on a breast can
 
 ---
 
+## Workflow Summary
+
+1. Upload and load the breast cancer dataset (CSV)
+2. Clean the dataset and map diagnosis labels (M → 1, B → 0)
+3. Split the data into training and testing sets
+4. Scale the features using `StandardScaler`
+5. Train two Support Vector Machine models:
+   - Linear kernel
+   - RBF (Radial Basis Function) kernel
+6. Visualize decision boundaries using the first two features
+7. Tune hyperparameters (`C`, `gamma`) using `GridSearchCV`
+8. Evaluate the best model on test data using accuracy and classification report
+
+---
+
 ## Dataset
 
 - The dataset used contains features extracted from breast cancer cell images.
