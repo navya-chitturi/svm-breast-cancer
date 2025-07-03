@@ -59,6 +59,18 @@ These visualizations use the **first two features** from the dataset for 2D plot
   - Recall
   - F1-score
 
+ ---
+ 
+## 📸 Visuals
+
+Decision boundary plots using the first two features:
+
+<div align="center">
+  <img src="linear_svm_plot.png" width="400"/>
+  <img src="rbf_svm_plot.png" width="400"/>
+</div>
+
+
 ---
 
 ## Notes
