@@ -61,7 +61,7 @@ These visualizations use the **first two features** from the dataset for 2D plot
 
  ---
  
-## 📸 Visuals
+## Visuals
 
 Decision boundary plots using the first two features:
 
